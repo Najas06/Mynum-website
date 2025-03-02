@@ -1,74 +1,19 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "../ui/carousel";
-import Image from "next/image";
-import SplitText from "../SplitText";
-import { Banners } from "@/assets/assets";
+import { Spotlight } from "../ui/spotlight-new";
+import { Pointer } from "../magicui/pointer";
 const HeroSection = () => {
   return (
-    <section className="max-w-[1920px] mx-auto">
-      <div>
-        <Carousel className="relative">
-          <CarouselContent>
-          
-            {Banners.map((banner, index) => (
-              <CarouselItem key={index}>
-                <div className="relative">
-                  <Image
-                    src={banner.image}
-                    width={1280}
-                    height={1080}
-                    className="w-full max-h-screen object-cover opacity-20 max-sm:h-[800px] max-sm:w-full "
-                    alt="hero"
-                  />
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col max-sm:top-1/3  max-sm:left-0 max-sm:translate-x-0 max-sm:translate-y-0">
-                    <SplitText
-                      text={banner.head}
-                      className="text-4xl font-semibold text-center md:text-6xl"
-                      delay={150}
-                      animationFrom={{
-                        opacity: 0,
-                        transform: "translate3d(0,50px,0)",
-                      }}
-                      animationTo={{
-                        opacity: 1,
-                        transform: "translate3d(0,0,0)",
-                      }}
-                      //   easing="easeOutCubic"
-                      threshold={0.2}
-                      rootMargin="-50px"
-                      //   onLetterAnimationComplete={handleAnimationComplete}
-                    />
-                    <SplitText
-                      text={banner.desc}
-                      className="text-sm font-normal text-center md:text-base"
-                      delay={50}
-                      animationFrom={{
-                        opacity: 0,
-                        transform: "translate3d(0,50px,0)",
-                      }}
-                      animationTo={{
-                        opacity: 1,
-                        transform: "translate3d(0,0,0)",
-                      }}
-                      //   easing="easeOutCubic"
-                      threshold={0.2}
-                      rootMargin="-50px"
-                      //   onLetterAnimationComplete={handleAnimationComplete}
-                    />
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-5 max-sm:hidden " />
-          <CarouselNext className="absolute right-5 max-sm:hidden " />
-        </Carousel>
+    <section className="max-w-[1920px] h-screen max-h-[1080px] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden mx-auto">
+      <Pointer className="fill-blue-950"/>
+      <Spotlight />
+      <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          Mynum <br /> Builds your Growth.
+        </h1>
+        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
+          A subtle yet effective spotlight effect, because the previous version
+          is used a bit too much these days.
+        </p>
       </div>
     </section>
   );

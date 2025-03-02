@@ -14,7 +14,7 @@ import { Pointer } from "../magicui/pointer";
 import { motion } from "framer-motion";
 const Services = () => {
   return (
-    <section className="my-10 px-10">
+    <section className="my-10 px-10 bg-neutral-950">
       <Pointer>
         <motion.div
           animate={{
@@ -48,9 +48,9 @@ const Services = () => {
           </svg>
         </motion.div>
       </Pointer>
-      <h1 className="text-4xl font-semibold text-center">Services</h1>
+      <h1 className="text-4xl font-semibold text-center py-5">Services</h1>
 
-      <BentoGrid className="max-w-4xl mx-auto">
+      <BentoGrid className="max-w-4xl mx-auto py-5">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
