@@ -30,9 +30,13 @@ const AboutUs = () => {
           <h1 className="text-3xl font-semibold ">About Us</h1>
           <p className="text-balance">
             At MyEnum, we don’t just offer services—we craft experiences that drive results. Whether it's Branding, Digital Marketing, Website Development, or Software Solutions, we bring expertise, innovation, and dedication to every project.
+            <br />
             ✔ Strategic Branding – We create powerful brand identities that make a lasting impact.
+            <br />
             ✔ Result-Driven Digital Marketing – Our data-driven marketing strategies ensure maximum reach and engagement.
+            <br />
             ✔ Custom Website Development – We build stunning, high-performance websites tailored to your business needs.
+            <br />
             ✔ Innovative Software Solutions – From automation to enterprise applications, we develop software that scales with your growth.
           </p>
 
