@@ -39,11 +39,11 @@ const AboutUs = () => {
             <br />
             Tailored Software Solutions – Whether you need a business management system, mobile app, or automation tools, our software solutions are built for performance, security, and scalability.
             <br />
-            Experienced & Passionate Team – Our team of experts is dedicated to delivering high-quality solutions that align with your business goals. We stay ahead of industry trends to provide you with cutting-edge solutions.
+            Experienced and Passionate Team – Our team of experts is dedicated to delivering high-quality solutions that align with your business goals. We stay ahead of industry trends to provide you with cutting-edge solutions.
             <br />
             Client-Centric Approach – Your success is our priority. We believe in collaboration, transparency, and delivering tailor-made solutions that help you achieve measurable growth.
             <br />
-            Innovation & Technology – We leverage the latest technologies and creative strategies to help you stay ahead of the competition in the ever-evolving digital landscape.
+            Innovation and Technology – We leverage the latest technologies and creative strategies to help you stay ahead of the competition in the ever-evolving digital landscape.
             <br />
             Let’s turn your vision into reality! Partner with MyEnum today and take your brand, digital presence, and software solutions to the next level.
 
