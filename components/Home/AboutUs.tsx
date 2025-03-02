@@ -29,15 +29,11 @@ const AboutUs = () => {
         <div className="w-1/2 flex flex-col gap-y-6 px-3 max-lg:w-full">
           <h1 className="text-3xl font-semibold ">About Us</h1>
           <p className="text-balance">
-            At CBR Branding,one of the top branding agencies in India, we
-            specialize in creating powerful brand identities and stunning logo
-            designs that leave a lasting impression. Whether you’re launching a
-            new business or refreshing your current brand, our team works
-            closely with you to craft a visual identity that speaks to your
-            audience and sets you apart from the competition. Known among the
-            top branding companies in India, we bring your brand’s story to life
-            through impactful visuals and thoughtful design, blending
-            creativity, strategic thinking, and a passion for excellence.
+            At MyEnum, we don’t just offer services—we craft experiences that drive results. Whether it's Branding, Digital Marketing, Website Development, or Software Solutions, we bring expertise, innovation, and dedication to every project.
+            ✔ Strategic Branding – We create powerful brand identities that make a lasting impact.
+            ✔ Result-Driven Digital Marketing – Our data-driven marketing strategies ensure maximum reach and engagement.
+            ✔ Custom Website Development – We build stunning, high-performance websites tailored to your business needs.
+            ✔ Innovative Software Solutions – From automation to enterprise applications, we develop software that scales with your growth.
           </p>
 
           <div className="flex gap-3 max-sm:flex-col">
