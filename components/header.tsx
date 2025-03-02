@@ -28,7 +28,7 @@ export default function Header() {
               key={index}
               className="cursor-pointer font-medium hover:bg-neutral-800 px-2 py-1 transition duration-300 rounded "
             >
-              <Link href={`/${link}`}>{link}</Link>
+              <Link href={`${link.path}`}>{link.title}</Link>
             </li>
           ))}
         </ul>
@@ -45,21 +45,11 @@ export default function Header() {
             <div className="flex flex-col items-end">
               <RxCross1 onClick={toggleMenu} />
               <ul className="text-end flex flex-col gap-4 mt-8">
-                <li>
-                  <Link href={"/"}>Home</Link>
-                </li>
-                <li>
-                  <Link href={"/about"}>About</Link>
-                </li>
-                <li>
-                  <Link href={"/properties"}>Property</Link>
-                </li>
-                <li>
-                  <Link href={"/blog"}>Blog</Link>
-                </li>
-                <li>
-                  <Link href={"/about"}>Contact</Link>
-                </li>
+                {links.map((item, index) => (
+                  <li key={index}>
+                    <Link href={`${item.path}`}>{item.title}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -69,4 +59,25 @@ export default function Header() {
   );
 }
 
-const links = ["Home", "About", "Academy", "Contact"];
+const links = [
+  {
+    id: 1,
+    path: "/",
+    title: "Home",
+  },
+  {
+    id: 1,
+    path: "/about",
+    title: "About",
+  },
+  {
+    id: 1,
+    path: "/services",
+    title: "Services",
+  },
+  {
+    id: 1,
+    path: "/contact",
+    title: "Contact",
+  },
+];
