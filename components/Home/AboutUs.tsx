@@ -29,24 +29,15 @@ const AboutUs = () => {
         <div className="w-1/2 flex flex-col gap-y-6 px-3 max-lg:w-full">
           <h1 className="text-3xl font-semibold ">Why Choose MyEnum?</h1>
           <p className="text-balance">
-            At MyEnum, we believe in delivering excellence through creativity, innovation, and technology. Whether you're looking for a strong brand presence, high-performing digital marketing strategies, a cutting-edge website, or custom software solutions, we’ve got you covered.
-            Here’s what sets us apart:
-            Comprehensive Branding Solutions – We craft unique brand identities that tell your story, making your business stand out in a crowded market. From logos to complete brand strategies, we ensure consistency and impact.
+            At MyEnum, we don’t just offer services—we craft experiences that drive results. Whether it's Branding, Digital Marketing, Website Development, or Software Solutions, we bring expertise, innovation, and dedication to every project.
             <br />
-            Data-Driven Digital Marketing – We don’t just market; we create experiences that convert. Our SEO, social media, content marketing, and PPC strategies are designed to maximize engagement and ROI.
+            ✔ Strategic Branding – We create powerful brand identities that make a lasting impact.
             <br />
-            Custom Website Development – Your website is the face of your business. We design and develop responsive, user-friendly, and SEO-optimized websites that enhance user experience and drive conversions.
+            ✔ Result-Driven Digital Marketing – Our data-driven marketing strategies ensure maximum reach and engagement.
             <br />
-            Tailored Software Solutions – Whether you need a business management system, mobile app, or automation tools, our software solutions are built for performance, security, and scalability.
+            ✔ Custom Website Development – We build stunning, high-performance websites tailored to your business needs.
             <br />
-            Experienced and Passionate Team – Our team of experts is dedicated to delivering high-quality solutions that align with your business goals. We stay ahead of industry trends to provide you with cutting-edge solutions.
-            <br />
-            Client-Centric Approach – Your success is our priority. We believe in collaboration, transparency, and delivering tailor-made solutions that help you achieve measurable growth.
-            <br />
-            Innovation and Technology – We leverage the latest technologies and creative strategies to help you stay ahead of the competition in the ever-evolving digital landscape.
-            <br />
-            Let’s turn your vision into reality! Partner with MyEnum today and take your brand, digital presence, and software solutions to the next level.
-
+            ✔ Innovative Software Solutions – From automation to enterprise applications, we develop software that scales with your growth.
           <div className="flex gap-3 max-sm:flex-col">
             <Card className="w-1/2 rounded-2xl max-sm:w-full">
               <CardHeader>
