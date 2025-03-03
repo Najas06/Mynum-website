@@ -12,7 +12,7 @@ export function HeroScrollDemo() {
             <h1 className="text-4xl font-semibold text-white/80">
               Boost your Company by <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Mynum Services
+                Myenum Services
               </span>
             </h1>
           </>
