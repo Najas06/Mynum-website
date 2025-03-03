@@ -18,7 +18,7 @@ const AboutUs = () => {
     <section className="my-10">
       <Pointer className="fill-blue-500" />{" "}
       <ScrollVelocity
-        texts={["| Mynum Services"]}
+        texts={["|MyEum Services"]}
         velocity={100}
         className="custom-scroll-text text-2xl font-semibold mx-auto"
       />
