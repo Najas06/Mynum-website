@@ -16,7 +16,7 @@ import { Pointer } from "../magicui/pointer";
 const AboutUs = () => {
   return (
     <section className="my-10">
-      <Pointer className="fill-blue-500" />{" "}
+      <Pointer className="fill-blue-500" />
       <ScrollVelocity
         texts={["| Mynum Services"]}
         velocity={100}
@@ -28,16 +28,28 @@ const AboutUs = () => {
         </div>
         <div className="w-1/2 flex flex-col gap-y-6 px-3 max-lg:w-full">
           <h1 className="text-3xl font-semibold ">Why Choose MyEnum?</h1>
-          <p className="text-balance">
-            At MyEnum, we don’t just offer services—we craft experiences that drive results. Whether it's Branding, Digital Marketing, Website Development, or Software Solutions, we bring expertise, innovation, and dedication to every project.
-            <br />
-            ✔ Strategic Branding – We create powerful brand identities that make a lasting impact.
-            <br />
-            ✔ Result-Driven Digital Marketing – Our data-driven marketing strategies ensure maximum reach and engagement.
-            <br />
-            ✔ Custom Website Development – We build stunning, high-performance websites tailored to your business needs.
-            <br />
-            ✔ Innovative Software Solutions – From automation to enterprise applications, we develop software that scales with your growth.
+          <p className="text-balance flex flex-col gap-y-3 ">
+            At MyEnum, we don’t just offer services—we craft experiences that
+            drive results. Whether it's Branding, Digital Marketing, Website
+            Development, or Software Solutions, we bring expertise, innovation,
+            and dedication to every project.
+            <p>
+              ✔ Strategic Branding – We create powerful brand identities that
+              make a lasting impact.
+            </p>
+            <p>
+              ✔ Result-Driven Digital Marketing – Our data-driven marketing
+              strategies ensure maximum reach and engagement.
+            </p>
+            <p>
+              ✔ Custom Website Development – We build stunning, high-performance
+              websites tailored to your business needs.
+            </p>
+            <p>
+              ✔ Innovative Software Solutions – From automation to enterprise
+              applications, we develop software that scales with your growth.
+            </p>
+          </p>
           <div className="flex gap-3 max-sm:flex-col">
             <Card className="w-1/2 rounded-2xl max-sm:w-full">
               <CardHeader>
