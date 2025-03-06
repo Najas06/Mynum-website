@@ -9,7 +9,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Built and launched from scratch.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -49,12 +49,10 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            ...
           </p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            ...
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -94,7 +92,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            Deployed 5 new components on today
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
