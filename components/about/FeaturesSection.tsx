@@ -12,7 +12,7 @@ const FeaturesSection = () => {
   return (
     <section>
       <h2 className="text-4xl font-semibold text-center">
-        Don't Take Our 100+ Customers For Granted
+        We Promise you the best service ever
       </h2>
       <ParallaxScrollDemo />
       <div className="flex justify-center items-center">

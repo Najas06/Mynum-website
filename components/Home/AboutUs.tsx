@@ -28,62 +28,60 @@ const AboutUs = () => {
         </div>
         <div className="w-1/2 flex flex-col gap-y-6 px-3 max-lg:w-full">
           <h1 className="text-3xl font-semibold ">Why Choose MyEnum?</h1>
-          <p className="text-balance flex flex-col gap-y-3 ">
+          <p className="text-balance flex flex-col gap-y-3 text-xl ">
             At MyEnum, we don’t just offer services—we craft experiences that
             drive results. Whether it's Branding, Digital Marketing, Website
             Development, or Software Solutions, we bring expertise, innovation,
             and dedication to every project.
-            <p>
-              ✔ Strategic Branding – We create powerful brand identities that
-              make a lasting impact.
-            </p>
-            <p>
-              ✔ Result-Driven Digital Marketing – Our data-driven marketing
-              strategies ensure maximum reach and engagement.
-            </p>
-            <p>
-              ✔ Custom Website Development – We build stunning, high-performance
-              websites tailored to your business needs.
-            </p>
-            <p>
-              ✔ Innovative Software Solutions – From automation to enterprise
-              applications, we develop software that scales with your growth.
-            </p>
           </p>
+          <ul className="flex flex-col gap-y-3  ">
+            {points.map((point, index) => (
+              <li>{point}</li>
+            ))}
+          </ul>
           <div className="flex gap-3 max-sm:flex-col">
             <Card className="w-1/2 rounded-2xl max-sm:w-full">
               <CardHeader>
-                <CardTitle>Branding</CardTitle>
-                <CardDescription>
-                  At CBR Branding, we create impactful brand identities that
-                  resonate with your audience. Let us help you stand out and
-                  reflect your core values.
+                <CardTitle className="uppercase font-semibold text-2xl">
+                  🚀 Our Mission
+                </CardTitle>
+                <CardDescription className="text-neutral-300">
+                  To <span className="font-semibold">redefine enumeration</span>{" "}
+                  through automation, AI-driven optimization, and seamless data
+                  structuring—empowering businesses and organizations with
+                  smarter, faster, and more accurate data processing solutions.
                 </CardDescription>
               </CardHeader>
 
-              <CardFooter>
+              {/* <CardFooter>
                 <Button className="rounded">
                   <HiOutlineClipboardList />
-                  Deploy
+                  View
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
             <Card className="w-1/2 rounded-2xl max-sm:w-full">
               <CardHeader>
-                <CardTitle>Branding</CardTitle>
-                <CardDescription>
-                  At CBR Branding, we create impactful brand identities that
-                  resonate with your audience. Let us help you stand out and
-                  reflect your core values.
+                <CardTitle className="uppercase font-semibold text-2xl">
+                  🔮 Our Vision
+                </CardTitle>
+                <CardDescription className="text-neutral-300">
+                  To be the{" "}
+                  <span className="font-semibold">
+                    global leader in enumeration technology
+                  </span>{" "}
+                  providing a universal solution for structuring and organizing
+                  data across industries, eliminating inefficiencies, and
+                  enabling data-driven innovation.
                 </CardDescription>
               </CardHeader>
 
-              <CardFooter>
+              {/* <CardFooter>
                 <Button className="rounded">
                   <HiOutlineClipboardList />
-                  Deploy
+                  View
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </div>
         </div>
@@ -93,3 +91,12 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+const points = [
+  "✅ AI-Driven Efficiency – Automate enumeration processes, reducing manual labor.",
+  "✅ 100% Accuracy – Minimize human errors and ensure precision in data classification.",
+  "✅ User-Friendly Interface – No coding required, just intuitive workflows.",
+  "✅ Seamless Integration – Compatible with APIs, databases, and enterprise software.",
+  "✅ Customizable & Scalable – Tailor enumeration to fit your unique business needs.",
+  "✅ Robust Security – Your data is encrypted, protected, and compliant with industry standards.",
+];
