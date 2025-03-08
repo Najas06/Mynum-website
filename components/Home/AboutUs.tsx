@@ -36,7 +36,7 @@ const AboutUs = () => {
           </p>
           <ul className="flex flex-col gap-y-3  ">
             {points.map((point, index) => (
-              <li>{point}</li>
+              <li key={index}>{point}</li>
             ))}
           </ul>
           <div className="flex gap-3 max-sm:flex-col">

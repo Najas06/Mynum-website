@@ -3,6 +3,7 @@ import { HeroParallaxDemo } from '../HeroParallaxDemo'
 import { HeroScrollDemo } from '../HeroScrollDemo'
 import { TimelineDemo } from '../TimelineDemo'
 import { Pointer } from '../magicui/pointer'
+import HowMynumWork from '../HowMynumWork'
 
 const WhyChooseUs = () => {
   return (
@@ -10,7 +11,8 @@ const WhyChooseUs = () => {
       <Pointer className='fill-cyan-200'/>
         <HeroParallaxDemo/>
         <HeroScrollDemo/>
-        <TimelineDemo/>
+        {/* <TimelineDemo/> */}
+        <HowMynumWork/>
     </section>
   )
 }

@@ -46,7 +46,7 @@ export default function Header() {
               <RxCross1 onClick={toggleMenu} />
               <ul className="text-end flex flex-col gap-4 mt-8">
                 {links.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} onClick={toggleMenu}>
                     <Link href={`${item.path}`}>{item.title}</Link>
                   </li>
                 ))}

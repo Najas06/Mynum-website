@@ -12,7 +12,7 @@ export default function page() {
       <ServicesHeroSection />
       <FeaturesSectionDemo />
       <MacbookScrollDemo />
-      <TracingBeamDemo />
+      {/* <TracingBeamDemo /> */}
     </main>
   );
 }
