@@ -12,14 +12,14 @@ export function HeroScrollDemo() {
             <h1 className="text-4xl font-semibold text-white/80">
               Boost your Company by <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Myenum Services
+                Mynum Services
               </span>
             </h1>
           </>
         }
       >
         <Image
-          src={`/demo.webp`}
+          src={`/sale.webp`}
           alt="hero"
           height={720}
           width={1400}

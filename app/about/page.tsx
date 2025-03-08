@@ -10,9 +10,9 @@ const Page = () => {
     <main>
         <AboutHero/>
         <FeaturesSection/>
-        <ServicesHeroSection />
-        <FeaturesSectionDemo/>
-        <ContactSection/>
+        {/* <ServicesHeroSection /> */}
+        {/* <FeaturesSectionDemo/> */}
+        {/* <ContactSection/> */}
         
     </main>
   )

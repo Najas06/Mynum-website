@@ -5,7 +5,7 @@ import Link from "next/link";
 export function MacbookScrollDemo() {
   return (
     <div className="overflow-hidden bg-[#0B0B0F]  w-full">
-      <MacbookScroll src={`/demo.webp`} showGradient={false} />
+      <MacbookScroll src={`/sale.webp`} showGradient={false} />
     </div>
   );
 }

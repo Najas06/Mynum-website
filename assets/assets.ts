@@ -8,6 +8,7 @@ import studio3 from "./studio/Pic-3.jpg";
 import studio4 from "./studio/Pic-4.jpg";
 import studio5 from "./studio/Pic-5.jpg";
 import studio6 from "./studio/Pics-6.jpg";
+import sale from './homepage/sale.jpg'
 export const Banners = [
   {
     id: 1,
@@ -110,4 +111,4 @@ export const products = [
   },
 ];
 
-export { AboutusImg };
+export { AboutusImg ,sale};

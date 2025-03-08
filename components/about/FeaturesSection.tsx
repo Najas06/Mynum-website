@@ -15,13 +15,13 @@ const FeaturesSection = () => {
         We Promise you the best service ever
       </h2>
       <ParallaxScrollDemo />
-      <div className="flex justify-center items-center">
-        <div className="w-1/2">
+      <div className="flex flex-col justify-center items-center">
+        <div className="w-full">
           <CardStackDemo />
         </div>
-        <div className="w-1/2">
+        <div className="w-full">
           <div className="space-y-4">
-            <h2 className="text-xl font-bold">W/ chevron</h2>
+            <h2 className="text-xl font-bold">Frequently Asking Questions</h2>
             <Accordion
               type="single"
               collapsible
