@@ -1,117 +1,92 @@
-"use client"
+'use client'
+import { Mail, MapPin, Phone } from "lucide-react";
+import { toast } from "sonner";
 
-import type React from "react"
-
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-// import { toast } from "@/components/ui/use-toast"
-
-export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log(formData)
-    // toast({
-    //   title: "Inquiry Submitted",
-    //   description: "Thank you for your inquiry. We'll get back to you soon.",
-    // })
-  }
-
+const ContactForm = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    toast.success("Thanks for reaching out")
+  };
   return (
-    <div className="container mx-auto py-12 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left side - Location iframe */}
-        <div className="h-[500px] md:h-full rounded-lg overflow-hidden border border-border">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986548248684!3d40.697149422113014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1646458254655!5m2!1sen!2s"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Our Location"
-            className="w-full h-full"
-          />
-        </div>
+    <div className="grid grid-cols-3 gap-x-5 max-lg:grid-cols-1 max-lg:gap-y-3 ">
+      <div className="col-span-1 flex flex-col gap-y-6 items-start max-md:gap-y-3">
+        <h2 className="text-4xl font-bold">Keep in touch with us</h2>
+        <p className="text-lg">
+          Stay ahead of the curve by joining our vibrant community on <br />
+          <span className="font-bold bg-gradient-to-t from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+            MyEnum Services
+          </span>
+          ! Connect with us to receive timely updates on articles and the latest
+          in tech trends.
+        </p>
 
-        {/* Right side - Inquiry form */}
-        <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-          <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
-              <Input
-                id="name"
-                name="name"
-                placeholder="John Doe"
-                value={formData.name}
-                onChange={handleChange}
+        <p className="flex items-center gap-2 max-md:text-sm justify-center font-semibold">
+          <MapPin className="w-12 h-10 bg-black text-white p-2 rounded-full" />{" "}
+          Block 1, Cellar Floor,Block 1, Rathinam Tech Zone Campus, Coimbatore,
+          Tamil Nadu
+        </p>
+
+        <p className="flex items-center gap-2 justify-center font-semibold">
+          <Phone className="w-10 h-10 bg-black text-white p-2 rounded-full" />{" "}
+          +91 9176121201
+        </p>
+
+        <p className="flex items-center gap-2 justify-center font-semibold">
+          <Mail className="w-10 h-10 bg-black text-white p-2 rounded-full" />{" "}
+          info@cyfotok.com
+        </p>
+      </div>
+      <div className="col-span-2 flex flex-col gap-y-6 border bg-white/10  rounded-2xl p-5 border-black/80 shadow-xl">
+        <h2 className="text-4xl font-bold">Send a Message</h2>
+        <p className="text-lg ">
+          Send us your comments! We value your feedback and look forward to
+          hearing from you. Connect with us today!
+        </p>
+        <form onSubmit={handleSubmit}>
+          <div className="w-full flex gap-x-5 max-md:flex-col">
+            <div className="flex flex-col gap-y-2 w-1/2 max-md:w-full">
+              <label htmlFor="name" className="text-lg font-semibold">
+                Full Name
+              </label>
+              <input
+                type="text"
                 required
+                placeholder="Enter Name"
+                className="px-4 py-2  bg-transparent outline-none border border-white/40"
               />
             </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="phone">Phone Number</Label>
-              <Input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="+1 (555) 123-4567"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="email">Email Address</Label>
-              <Input
-                id="email"
-                name="email"
+            <div className="flex flex-col gap-y-2 w-1/2 max-md:w-full">
+              <label htmlFor="email" className="text-lg font-semibold">
+                Email
+              </label>
+              <input
                 type="email"
-                placeholder="john.doe@example.com"
-                value={formData.email}
-                onChange={handleChange}
                 required
+                placeholder="Enter Email"
+                className="px-4 py-2  bg-transparent outline-none border border-white/40"
               />
             </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="message">Your Message</Label>
-              <Textarea
-                id="message"
-                name="message"
-                placeholder="How can we help you?"
-                rows={5}
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <Button type="submit" className="w-full">
-              Submit Inquiry
-            </Button>
-          </form>
-        </div>
+          </div>
+          <div className="flex flex-col gap-y-2">
+            <label htmlFor="message" className="text-lg font-semibold">
+              Message
+            </label>
+            <textarea
+              required
+              placeholder="Enter Message"
+              className="px-4 py-2 min-h-[100px]  bg-transparent outline-none border border-white/40"
+            />
+          </div>
+          <div className="flex justify-end">
+            <button className="bg-gradient-to-t from-blue-500 to-cyan-500 text-black hover:bg-gradient-to-t hover:from-cyan-400 hover:to-blue-400 px-4 py-2 rounded-md mt-5">
+              {" "}
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
+export default ContactForm;

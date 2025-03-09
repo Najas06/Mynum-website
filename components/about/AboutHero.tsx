@@ -24,11 +24,11 @@ const AboutHero = () => {
           backgroundSize: "cover",
         }}
       >
-        <h2 className="text-4xl font-bold text-white px-4 py-2 bg-black/40 rounded-lg shadow-xl bg-gradient-to-r from-blue-500 to-cyan-500 max-lg:text-5xl max-sm:text-2xl">
+        <h2 className="text-4xl font-bold text-white px-4 py-2 bg-black/40 rounded-[10px] shadow-xl bg-gradient-to-r from-blue-500 to-cyan-500 max-lg:text-5xl max-sm:text-2xl">
         Best Branding & Logo Designing <br /> Company in India
         </h2>
       </div>
-        <AppleCardsCarouselDemo/>
+        
       </div>
     </section>
   );

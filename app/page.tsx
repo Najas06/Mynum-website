@@ -4,6 +4,8 @@ import HeroSection from "@/components/Home/HeroSection";
 // import Services from "@/components/Home/Services";
 import Testimonals from "@/components/Home/Testimonals";
 import WhyChooseUs from "@/components/Home/WhyChooseUs";
+import Testimonials from "@/components/Testimonials";
+import { WobbleCardDemo } from "@/components/WobbleCardDemo";
 
 export default function Page() {
   return (
@@ -11,8 +13,10 @@ export default function Page() {
       <HeroSection/>
       <AboutUs/>
       {/* <Services/> */}
+      <WobbleCardDemo/>
       <WhyChooseUs/>
-      <Testimonals/>
+      {/* <Testimonals/> */}
+      <Testimonials/>
       {/* <ContactUS/> */}
     </main>
   )

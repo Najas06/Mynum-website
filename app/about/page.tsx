@@ -1,15 +1,19 @@
+import AboutDetailsSection from '@/components/about/AboutDetailsSection'
 import AboutHero from '@/components/about/AboutHero'
-import ContactSection from '@/components/about/ContactSection'
-import FeaturesSection from '@/components/about/FeaturesSection'
-import FeaturesSectionDemo from '@/components/features-section-demo-2'
-import ServicesHeroSection from '@/components/Services/ServicesHeroSection'
+import JoinDetailSection from '@/components/about/JoinDetailSection'
+// import ContactSection from '@/components/about/ContactSection'
+// import FeaturesSection from '@/components/about/FeaturesSection'
+// import FeaturesSectionDemo from '@/components/features-section-demo-2'
+// import ServicesHeroSection from '@/components/Services/ServicesHeroSection'
 import React from 'react'
 
 const Page = () => {
   return (
     <main>
         <AboutHero/>
-        <FeaturesSection/>
+        <AboutDetailsSection/>
+        <JoinDetailSection/>
+        {/* <FeaturesSection/> */}
         {/* <ServicesHeroSection /> */}
         {/* <FeaturesSectionDemo/> */}
         {/* <ContactSection/> */}
