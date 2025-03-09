@@ -111,4 +111,14 @@ export const products = [
   },
 ];
 
+export const testimonials = [
+  {
+    quote:
+      "MyEnum Serive Agency Boost my sales and Lead Generate by online platforms .",
+    name: "Huma Spices",
+    designation: "Intern Cybersecurity Analyst",
+    src: "https://9tyd79g1bs.ufs.sh/f/CVETMkBmijEYi4iwGMTbaHh9XFjLkWZ2dy6014YP73BtTeJ5",
+  },
+]
+
 export { AboutusImg ,sale};

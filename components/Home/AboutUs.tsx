@@ -43,7 +43,7 @@ const AboutUs = () => {
             <Card className="w-1/2 rounded-2xl max-sm:w-full">
               <CardHeader>
                 <CardTitle className="uppercase font-semibold text-2xl">
-                  🚀 Our Mission
+                  Our Mission
                 </CardTitle>
                 <CardDescription className="text-neutral-300">
                   To <span className="font-semibold">redefine enumeration</span>{" "}
@@ -63,7 +63,7 @@ const AboutUs = () => {
             <Card className="w-1/2 rounded-2xl max-sm:w-full">
               <CardHeader>
                 <CardTitle className="uppercase font-semibold text-2xl">
-                  🔮 Our Vision
+                  Our Vision
                 </CardTitle>
                 <CardDescription className="text-neutral-300">
                   To be the{" "}
@@ -93,10 +93,10 @@ const AboutUs = () => {
 export default AboutUs;
 
 const points = [
-  "✅ AI-Driven Efficiency – Automate enumeration processes, reducing manual labor.",
-  "✅ 100% Accuracy – Minimize human errors and ensure precision in data classification.",
-  "✅ User-Friendly Interface – No coding required, just intuitive workflows.",
-  "✅ Seamless Integration – Compatible with APIs, databases, and enterprise software.",
-  "✅ Customizable & Scalable – Tailor enumeration to fit your unique business needs.",
-  "✅ Robust Security – Your data is encrypted, protected, and compliant with industry standards.",
+  "AI-Driven Efficiency – Automate enumeration processes, reducing manual labor.",
+  "100% Accuracy – Minimize human errors and ensure precision in data classification.",
+  "User-Friendly Interface – No coding required, just intuitive workflows.",
+  "Seamless Integration – Compatible with APIs, databases, and enterprise software.",
+  "Customizable & Scalable – Tailor enumeration to fit your unique business needs.",
+  "Robust Security – Your data is encrypted, protected, and compliant with industry standards.",
 ];
